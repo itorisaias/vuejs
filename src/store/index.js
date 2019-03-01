@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import modules from './modules'
-import plugins from './plugins'
+// import plugins from './plugins'
 
 import actions from './actions'
 import getters from './getters'
@@ -13,7 +13,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules,
-  plugins,
+  // plugins, // TODO plugins
   actions,
   getters,
   mutations,
