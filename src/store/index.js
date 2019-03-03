@@ -11,12 +11,14 @@ import state from './state'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  modules,
-  // plugins, // TODO plugins
-  actions,
-  getters,
-  mutations,
-  state,
-  strict: process.env.NODE_ENV !== 'production'
-})
+export function createStore () {
+  return new Vuex.Store({
+    modules,
+    // plugins, // TODO plugins
+    actions,
+    getters,
+    mutations,
+    state,
+    strict: process.env.NODE_ENV !== 'production'
+  })
+}

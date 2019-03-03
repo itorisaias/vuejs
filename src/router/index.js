@@ -5,6 +5,7 @@ import routes from './routes'
 
 Vue.use(Router)
 
-const router = new Router({ routes })
-
-export default router
+export function createRouter () {
+  const router = new Router({ routes })
+  return router
+}

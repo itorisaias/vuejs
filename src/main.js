@@ -1,13 +1,22 @@
 import Vue from 'vue'
+import { sync } from 'vuex-router-sync'
 
-import './plugins'
+import './utils/plugins'
+import './utils/filters'
+import './utils/mixins'
 
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import { createStore } from './store'
+import { createRouter } from './router'
+
 import './registerServiceWorker'
 
 Vue.config.productionTip = false
+
+const store = createStore()
+const router = createRouter()
+
+sync(store, router)
 
 new Vue({
   router,

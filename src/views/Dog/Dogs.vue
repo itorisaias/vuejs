@@ -10,10 +10,7 @@
 
 <script>
 export default {
-  name: 'dogs'
+  name: 'dogs',
+  title: 'Dogs Page'
 }
 </script>
-
-<style scoped>
-
-</style>
