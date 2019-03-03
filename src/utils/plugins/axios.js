@@ -1,6 +1,3 @@
-'use strict'
-
-// import Vue from 'vue'
 import axios from 'axios'
 
 // Full config:  https://github.com/axios/axios#request-config
@@ -56,6 +53,6 @@ Plugin.install = function (Vue, options) {
   })
 }
 
-// Vue.use(Plugin)
-
-export default Plugin
+export {
+  Plugin
+}
