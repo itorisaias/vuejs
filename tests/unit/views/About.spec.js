@@ -1,9 +1,14 @@
+import Vue from 'vue'
 import { mount } from '@vue/test-utils'
-import About from '@/views/About'
-import '@/filters'
+import Vuetify from 'vuetify'
 
-describe('Test View About', () => {
-  let wrapper = mount(About)
+import About from '@/views/About.vue'
+
+describe('Teste Page About', function () {
+  let wrapper
+
+  Vue.use(Vuetify)
+  wrapper = mount(About)
 
   it('should be toggle value content', () => {
     wrapper.setData({ content: true })

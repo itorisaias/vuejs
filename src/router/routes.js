@@ -9,6 +9,11 @@ export default [
     component: Home
   },
   {
+    path: '/todo',
+    name: 'ToDo',
+    component: () => import('@/components/Todo/ToDoList.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     component: () => import('@/views/About.vue')
